@@ -1,0 +1,24 @@
+[
+    {
+        "_id": {
+            "$oid": "64ce8ac32a609774a9bd57e1"
+        },
+        "chatbot_id": 123456789,
+        "website_status": true,
+        "notify_status": true,
+        "notify_url": "https://www.facebook.com/",
+        "chargings": {
+            "partner_id": "73557215834",
+            "partner_key": "e5b25eaa253e24f2bc8f2dd36fccb8b3",
+            "partner_url": "https://thegiare.vn/chargingws/v2",
+            "rate": "0"
+        },
+        "createdAt": {
+            "$date": "2023-08-05T17:45:39.482Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T17:17:55.659Z"
+        },
+        "__v": 0
+    }
+]

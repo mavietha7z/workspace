@@ -1,0 +1,93 @@
+.wrapper {
+    padding: 48px 0;
+}
+
+.shadow {
+    padding: 16px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+
+    &:not(:first-child) {
+        margin-top: 16px;
+    }
+
+    th,
+    td {
+        vertical-align: middle;
+        padding: 12px;
+    }
+}
+
+.image {
+    max-width: 250px;
+    max-height: 240px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.title {
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.desc {
+    color: #434343;
+    line-height: 1.7;
+
+    p {
+        text-align: justify;
+        margin-bottom: 16px;
+    }
+}
+
+.price p {
+    margin-bottom: 12px;
+    font-size: 1.68rem;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.price-current {
+    svg {
+        transform: rotate(90deg);
+        font-size: 2rem;
+    }
+
+    span {
+        color: #ff0000;
+        font-weight: 700;
+        font-size: 2.18rem;
+        margin-left: 4px;
+    }
+}
+
+.price-old {
+    color: var(--text-gray);
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 1.54rem;
+    padding-left: 24px;
+}
+
+.action {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.title-img {
+    padding: 3px 0 3px 10px;
+    border-left: 5px solid var(--color-hover);
+    color: #000;
+    font-weight: bold;
+    font-size: 1.96rem;
+    margin-bottom: 20px;
+}
+
+.table-tr {
+    background: var(--color-hover);
+    color: #fff;
+}

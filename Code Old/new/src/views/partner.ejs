@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>Quản lý đối tác - Quản trị website</title>
+        <link rel="shortcut icon" href="/image/admin.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/admin.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="col-lg-10 col-xl-8 mx-auto p-3 py-md-5">
+            <div class="d-flex align-items-center justify-content-between pb-3 mb-5 px-4">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/admincp">Thống kê</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/admincp/partners">Đối tác</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admincp/telcos">Thẻ cào</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admincp/settings">Cài đặt</a>
+                    </li>
+                </ul>
+                <div class="btn-logout" title="Đăng xuất">
+                    <a href="/api/auth/logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="my-3 card-title">Quản lý đối tác</h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="mb-0 table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tên đối tác</th>
+                                    <th>Thông tin</th>
+                                    <th>Trạng thái</th>
+                                    <th>Kích hoạt</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% partners.forEach((partner) => { %>
+                                <tr>
+                                    <td><%= partner.partner_name %></td>
+                                    <td style="min-width: 300px">
+                                        <input
+                                            type="text"
+                                            class="form-control mb-2"
+                                            placeholder="Partner ID"
+                                            value="<%= partner.partner_id %>"
+                                            name="partner_id"
+                                        />
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Partner Key"
+                                            value="<%= partner.partner_key %>"
+                                            name="partner_key"
+                                        />
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            value="<%= partner.partner_name %>"
+                                            name="partner_name"
+                                            hidden
+                                        />
+                                    </td>
+                                    <td>
+                                        <div
+                                            class="switch round status <%= partner.status ? 'on' : 'off' %>"
+                                            partner_name="<%= partner.partner_name %>"
+                                        >
+                                            <div class="toggle"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div
+                                            class="switch round active <%= partner.active ? 'on' : 'off' %>"
+                                            partner_name="<%= partner.partner_name %>"
+                                        >
+                                            <div class="toggle"></div>
+                                        </div>
+                                    </td>
+                                    <td><%= partner.createdAt %></td>
+                                    <td>
+                                        <button class="btn btn-primary update-button">Cập nhật</button>
+                                    </td>
+                                </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="/js/partner.js"></script>
+</html>

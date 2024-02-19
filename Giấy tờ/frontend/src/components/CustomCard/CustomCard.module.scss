@@ -1,0 +1,133 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 0;
+    min-width: 0;
+
+    &:hover {
+        .mask {
+            opacity: 1;
+        }
+
+        .link span {
+            opacity: 1;
+            display: inline-block;
+
+            &:first-child {
+                margin-left: -15px;
+            }
+
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
+
+        .title {
+            color: var(--color-main);
+        }
+    }
+
+    &.border {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        height: 100%;
+
+        .header {
+            border: 0;
+            text-align: center;
+
+            img {
+                margin-top: 16px;
+            }
+        }
+
+        .title {
+            font-size: 1.68rem;
+        }
+
+        .body {
+            padding-top: 0;
+        }
+    }
+
+    img {
+        transition: all ease 0.5s;
+        max-height: 80%;
+        width: auto;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.header {
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.mask {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 0.5s;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.link {
+    position: absolute;
+    z-index: 120;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--color-hover);
+
+    span {
+        position: absolute;
+        z-index: 102;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+        opacity: 0;
+        background: var(--color-hover);
+    }
+}
+
+.body {
+    padding: 14px;
+    text-align: center;
+}
+
+.title {
+    color: #232323;
+    transition: 0.3s all ease;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.price {
+    line-height: 30px;
+    font-size: 1.5rem;
+    color: #d22323;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text {
+    margin-top: 16px;
+    color: var(--text-gray);
+}

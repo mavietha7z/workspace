@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px !important;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.header-run {
+    font-size: 1.5rem;
+}
+
+.text-run {
+    color: #00bfff;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.btn-post {
+    width: 100%;
+    background-color: #38a1b5;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 1rem;
+    border: 8px solid transparent;
+    border-radius: 0.5rem;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.home {
+    background-color: #38a1b5;
+    margin-top: -2px;
+    margin-top: 20px;
+}
+
+.from_rules {
+    font-style: italic;
+    margin-top: -4px;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.btn-post a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sale {
+    font-size: 1.6rem;
+    border-style: ridge;
+    margin-top: 18px;
+}
+
+.sale-list {
+    text-align: center;
+    width: 100%;
+}
+
+.text-board {
+    color: #00bfff;
+}
+
+.sale-list th {
+    margin-top: 2px;
+    line-height: 38px;
+}
+
+.sale-list td {
+    line-height: 40px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: green;
+    color: #0c5460;
+}
+
+.image {
+    width: 20px;
+    margin-left: 6px;
+}
+
+.gift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 36px;
+}
+
+ul {
+    list-style: none;
+}
+
+.guide ul li {
+    font-size: 1.6rem;
+
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.sub-title {
+    font-size: 1.6rem;
+    margin-left: 14px;
+    font-weight: 500;
+}
+
+.top {
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.top h1::after {
+    margin-top: 36px;
+    margin-bottom: 20px;
+    height: 2px;
+    display: inline-flex;
+    content: '';
+    width: 100%;
+    background-color: #00bfff;
+}
+
+li:nth-child(2n + 1).top-game {
+    background-image: linear-gradient(135deg, transparent, #c6f7ff);
+}
+
+li.top-game {
+    margin: 15px -24px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 12px 2px 0;
+}
+
+.footer {
+    margin-bottom: 30px;
+}
+
+.footer-heading {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #676e76;
+    font-size: 1.5rem;
+}
+
+.footer-link:hover {
+    color: black;
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #676e76;
+}
+
+.footer-name {
+    text-decoration: none;
+    color: #676e76;
+    font-weight: 400;
+}
+
+.footer-name:hover {
+    color: black;
+}
+
+.line-hr {
+    margin: 20px 0;
+}
+
+@media (max-width: 739px) {
+    .container {
+        padding: 0 8px !important;
+    }
+
+    .banner {
+        margin-top: 30px;
+    }
+
+    .top {
+        margin-top: 20px;
+    }
+
+    .top h1 {
+        line-height: 1.4;
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+
+    .header-img {
+        margin-left: 0;
+        width: 60px;
+        margin-bottom: 14px;
+    }
+
+    .header-title {
+        margin-left: 30px;
+        font-size: 26px;
+        line-height: 1.1;
+        margin-bottom: 0;
+    }
+
+    .header-title::after {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+
+    .guide ul li {
+        font-size: 1.4rem;
+    }
+
+    .top ul {
+        padding-left: 0;
+    }
+
+    li.top-game {
+        line-height: 1.2;
+        font-size: 1.3rem;
+        margin: 8px 0;
+        padding: 6px 0;
+    }
+
+    .footer-link {
+        font-size: 1.4rem;
+    }
+
+    .footer-copyright {
+        font-size: 1.6rem;
+    }
+}

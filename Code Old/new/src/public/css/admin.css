@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap');
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+.btn-logout {
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-size: 1.6rem !important;
+}
+
+.btn-logout i {
+    font-size: 1.6rem;
+}
+
+.btn-logout a {
+    color: #1b1a1a;
+}
+
+.btn-logout a:hover {
+    color: currentColor;
+}

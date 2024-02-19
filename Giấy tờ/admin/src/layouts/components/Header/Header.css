@@ -1,0 +1,82 @@
+.wrapper-header {
+    height: 70px;
+}
+
+.header.active {
+    margin-left: 250px;
+}
+
+.header-nav {
+    height: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon svg {
+    padding: 0 14px 0 20px;
+    font-size: 1.6rem;
+    color: var(--gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header-icon svg:hover {
+    color: var(--back);
+}
+
+.header-title a {
+    margin-right: 20px;
+    padding: 14px 0;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.2s;
+}
+
+.header-title a:hover {
+    color: var(--back);
+}
+
+.header-input {
+    background-color: #f2f4f6;
+    border-radius: 4px;
+    padding: 2px 0;
+    padding-right: 4px;
+    width: auto !important;
+}
+
+.header-input svg {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+.header-input input {
+    background-color: #f2f4f6;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.header-input input:focus {
+    background-color: #dee2e6;
+}
+
+.header-input button {
+    padding: 0 8px;
+}
+
+.header-logout {
+    margin-right: 30px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.header-logout svg {
+    font-size: 1.8rem;
+}

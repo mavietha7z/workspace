@@ -1,0 +1,28 @@
+.prev {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.prev-close {
+    color: #0000008a;
+    font-size: 3.6rem;
+    padding: 12px 24px 24px;
+    position: fixed;
+    right: 8px;
+    top: 0;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.prev-content {
+    padding: 150px 0;
+}
+
+.prev-content .container {
+    max-width: 900px;
+}

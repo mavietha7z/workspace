@@ -1,0 +1,14 @@
+.wrapper {
+    margin-top: 32px;
+    border-top: 1px solid #e4e4e7;
+    padding-top: 40px;
+    background: #252525;
+    color: rgba(161, 161, 161, 0.6);
+    clip-path: polygon(0 0, 36% 0, calc(36% + 1.25rem) 1.25rem, 100% 1.25rem, 100% 100%, 0 100%);
+}
+
+.container {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 30px;
+}

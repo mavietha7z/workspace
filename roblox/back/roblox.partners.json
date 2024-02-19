@@ -1,0 +1,74 @@
+[
+    {
+        "_id": {
+            "$oid": "649322d5b08518f9c7fe5d4a"
+        },
+        "partner_name": "Trumthe",
+        "partner_id": "",
+        "partner_key": "",
+        "partner_url": "https://trumthe.vn/chargingws/v2",
+        "active": false,
+        "status": false,
+        "createdAt": {
+            "$date": "2023-06-21T16:18:29.784Z"
+        },
+        "updatedAt": {
+            "$date": "2023-06-26T05:35:01.127Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64932318b08518f9c7fe5d4c"
+        },
+        "partner_name": "Gachthe1s",
+        "partner_id": "",
+        "partner_key": "",
+        "partner_url": "https://gachthe1s.com/chargingws/v2",
+        "active": false,
+        "status": false,
+        "createdAt": {
+            "$date": "2023-06-21T16:19:36.405Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T17:36:14.630Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "6493233ab08518f9c7fe5d4e"
+        },
+        "partner_name": "Thesieure",
+        "partner_id": "1249978951",
+        "partner_key": "c38e7b5222f4613e5308d30b821a7981",
+        "partner_url": "https://thesieure.com/chargingws/v2",
+        "active": false,
+        "status": false,
+        "createdAt": {
+            "$date": "2023-06-21T16:20:10.398Z"
+        },
+        "updatedAt": {
+            "$date": "2023-06-26T05:35:11.108Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64932354b08518f9c7fe5d50"
+        },
+        "partner_name": "Doithe",
+        "partner_id": "",
+        "partner_key": "",
+        "partner_url": "https://doithe.vn/chargingws/v2",
+        "active": false,
+        "status": false,
+        "createdAt": {
+            "$date": "2023-06-21T16:20:36.844Z"
+        },
+        "updatedAt": {
+            "$date": "2023-06-23T09:48:00.565Z"
+        },
+        "__v": 0
+    }
+]

@@ -1,0 +1,397 @@
+@import 'normalize.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b5b6b6;
+    border-radius: 10px;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --success: #28a745;
+    --primary: #007bff;
+    --danger: #dc3545;
+    --gray: rgba(0, 0, 0, 0.5);
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* My config */
+
+.wrapper-container {
+    margin-left: 50px;
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.wrapper-container.active {
+    margin-left: 240px;
+}
+
+.wrapper {
+    background: #f4f6f9;
+    min-height: calc(100vh - 122px);
+}
+
+.header {
+    padding: 20px 10px;
+    height: 100px;
+}
+
+.content {
+    padding: 10px 8px;
+}
+
+.content button span {
+    margin-left: 3px;
+}
+
+.btn-action {
+    padding: 4px 8px;
+    font-size: 1.4rem;
+}
+
+.wrapper-footer {
+    padding: 15px 50px;
+    color: #555;
+    border-top: 1px solid #dee2e6;
+    background: #fff;
+}
+
+.wrapper-title {
+    font-size: 3rem;
+    color: #343a40;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #ececec;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 10%), inset 0px 1px 3px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.switch.round {
+    padding: 0px 26px;
+    border-radius: 40px;
+}
+
+.switch.off .toggle {
+    left: 1px;
+}
+
+.switch.round .toggle {
+    border-radius: 40px;
+    width: 18px;
+    height: 18px;
+}
+
+.switch .toggle {
+    position: absolute;
+    top: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: all 0.15s ease-in-out;
+}
+
+.switch.round.on .toggle {
+    left: 63%;
+    background: #4caf50;
+}
+
+tr td img {
+    border: 1px solid #e2dede;
+}
+
+div#swal2-html-container {
+    font-size: 1.3rem;
+}
+
+/* Swal */
+.swal2-styled.swal2-confirm,
+.swal2-html-container {
+    font-size: 1.3rem;
+}
+
+.swal2-styled.swal2-confirm {
+    padding: 8px 18px;
+    background-color: #17a2b8;
+}
+
+.swal2-styled.swal2-confirm:focus,
+.swal2-styled.swal2-confirm {
+    margin: 0;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    padding-right: 6px;
+}
+
+.link.link-next {
+    padding-left: 4px;
+    color: #6c757d;
+}
+
+.link.link-next:hover {
+    color: #6c757d;
+    cursor: text;
+}
+
+/* Css Bootstrap */
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-control,
+.btn {
+    padding: 6px 12px;
+    font-size: 1.4rem;
+    height: 36px;
+}
+
+.btn-warning:focus,
+.btn-success:focus,
+.btn-danger:focus,
+.btn-primary:focus,
+button:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #969696;
+}
+
+.btn.btn-sm {
+    padding: 4px 8px;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bg-secondary,
+.bg-primary,
+.bg-success {
+    color: #fff;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.table td,
+.table th {
+    vertical-align: inherit;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.nav-tabs .nav-item button {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.page-link {
+    color: #17a2b8;
+}
+
+.page-item.active .page-link {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+/* Mark down */
+
+.mark-down p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.mark-down p img {
+    display: block;
+    margin: 16px auto;
+}
+
+/* Font  */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2)
+        format('woff2');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2)
+        format('woff2');
+}

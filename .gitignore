@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/ChatApp/client/node_modules
+/ChatApp/server/node_modules
+/Chuyenthe/backend/node_modules
+/Chuyenthe/frontend/node_modules
+/Clone F8/frontend/node_modules
+/Clone F8/backend/node_modules
+/Clone F8/admin/node_modules
+/Code Old/new/node_modules
+/Code Old/source/node_modules
+/FormAuto/node_modules
+/Giấy tờ/admin/node_modules
+/Giấy tờ/backend/node_modules
+/Giấy tờ/frontend/node_modules
+/Kim Cương Garena/frontend/node_modules
+/Kim Cương Garena/backend/node_modules
+/Napthe.vn V1/backend/node_modules
+/Napthe.vn V1/frontend/node_modules
+/Napthe.vn V1/admin/node_modules
+/Napthe.vn V2/admin/node_modules
+/Napthe.vn V2/back/node_modules
+/Napthe.vn V2/front/node_modules
+/payment-service/node_modules
+/roblox/front/node_modules
+/roblox/back/node_modules
+/roblox/admin/node_modules
+/TheNhanh/admin/node_modules
+/TheNhanh/frontend/node_modules
+/Thiết kế website/frontend/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

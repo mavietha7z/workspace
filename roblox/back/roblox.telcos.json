@@ -1,0 +1,170 @@
+[
+    {
+        "_id": {
+            "$oid": "64ce85c66544c5fde29ff1b3"
+        },
+        "telco": "VIETTEL",
+        "value": [
+            {
+                "value": 50000,
+                "gift": 1400
+            },
+            {
+                "value": 100000,
+                "gift": 2900
+            },
+            {
+                "value": 200000,
+                "gift": 5950
+            },
+            {
+                "value": 300000,
+                "gift": 8850
+            },
+            {
+                "value": 500000,
+                "gift": 15250
+            }
+        ],
+        "description": "",
+        "discount": 0,
+        "priority": 1,
+        "image_url": "https://i.imgur.com/908QRdE.png",
+        "code_length": 15,
+        "serial_length": 14,
+        "product_code": "VIETTEL",
+        "status": true,
+        "createdAt": {
+            "$date": "2023-08-05T17:24:22.825Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T11:09:38.385Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64ce865fc658a2be359bfaf5"
+        },
+        "telco": "VINAPHONE",
+        "value": [
+            {
+                "value": 50000,
+                "gift": 1400
+            },
+            {
+                "value": 100000,
+                "gift": 2900
+            },
+            {
+                "value": 200000,
+                "gift": 5950
+            },
+            {
+                "value": 300000,
+                "gift": 8850
+            },
+            {
+                "value": 500000,
+                "gift": 15250
+            }
+        ],
+        "description": "",
+        "discount": 0,
+        "priority": 2,
+        "image_url": "https://i.imgur.com/ExS1Nf2.png",
+        "code_length": 14,
+        "serial_length": 14,
+        "product_code": "VINAPHONE",
+        "status": true,
+        "createdAt": {
+            "$date": "2023-08-05T17:26:55.094Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T11:11:13.303Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64ce86a3c658a2be359bfb03"
+        },
+        "telco": "MOBIFONE",
+        "value": [
+            {
+                "value": 50000,
+                "gift": 1400
+            },
+            {
+                "value": 100000,
+                "gift": 2900
+            },
+            {
+                "value": 200000,
+                "gift": 5950
+            },
+            {
+                "value": 300000,
+                "gift": 8850
+            },
+            {
+                "value": 500000,
+                "gift": 15250
+            }
+        ],
+        "description": "",
+        "discount": 0,
+        "priority": 3,
+        "image_url": "https://res.cloudinary.com/dadmf8sa4/image/upload/v1678461107/Telco/rqlknm2u5zi2upnwzvc4.jpg",
+        "code_length": 12,
+        "serial_length": 15,
+        "product_code": "MOBIFONE",
+        "status": true,
+        "createdAt": {
+            "$date": "2023-08-05T17:28:03.348Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T11:11:26.817Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "64ce86dbc1afb0e5356f37a9"
+        },
+        "telco": "GARENA",
+        "value": [
+            {
+                "value": 50000,
+                "gift": 1400
+            },
+            {
+                "value": 100000,
+                "gift": 2900
+            },
+            {
+                "value": 200000,
+                "gift": 5950
+            },
+            {
+                "value": 500000,
+                "gift": 15250
+            }
+        ],
+        "description": "",
+        "discount": 0,
+        "priority": 4,
+        "image_url": "https://i.imgur.com/uBNGFmq.png",
+        "code_length": 16,
+        "serial_length": 9,
+        "product_code": "GARENA",
+        "status": true,
+        "createdAt": {
+            "$date": "2023-08-05T17:28:59.132Z"
+        },
+        "updatedAt": {
+            "$date": "2023-08-07T11:14:37.427Z"
+        },
+        "__v": 0
+    }
+]

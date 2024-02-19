@@ -1,0 +1,39 @@
+.title h1 {
+    font-size: 2.9rem;
+    font-weight: 900;
+}
+
+.meta {
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span:not(:last-of-type) {
+        padding-right: 10px;
+        margin-right: 10px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 10px;
+            top: 51%;
+            right: 0;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+.meta span b {
+    color: var(--text-dark);
+}
+
+.content {
+    line-height: 1.8;
+    color: #676767;
+    margin-top: 20px;
+}

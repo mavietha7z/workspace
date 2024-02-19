@@ -1,0 +1,32 @@
+.wrapper {
+    position: relative;
+    padding-bottom: 48px;
+    text-align: center;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 40px;
+        height: 3px;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--color-main);
+    }
+}
+
+.title {
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.desc {
+    color: #00000080;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
